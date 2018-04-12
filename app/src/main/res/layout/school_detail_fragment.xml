@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="SchoolDetailFragment"
+            type="com.example.conne.a20180411_ss_nycschool.ui.SchoolDetailFragment">
+
+        </variable>
+    </data>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/title_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/test_score"
+        android:layout_marginTop="@dimen/margin_ten"
+        android:layout_marginLeft="@dimen/margin_ten"
+        android:layout_marginStart="@dimen/margin_ten"
+        android:textSize="@dimen/score_title_size"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    
+    <TextView
+    android:id="@+id/test_takers_num_textView"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="@string/no_of_test_takers"
+    android:layout_marginTop="@dimen/margin_ten"
+    android:layout_marginLeft="@dimen/margin_ten"
+        android:layout_marginStart="@dimen/margin_ten"
+    android:textSize="@dimen/text_size"
+        android:textColor="@android:color/black"
+    app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_textView"
+        app:layout_constraintHorizontal_weight="8"
+        app:layout_constraintHorizontal_chainStyle="spread"
+    />
+
+    <TextView
+        android:id="@+id/test_takers_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_ten"
+        android:layout_marginLeft="@dimen/margin_ten"
+        android:layout_marginStart="@dimen/margin_ten"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintLeft_toRightOf="@id/test_takers_num_textView"
+        app:layout_constraintTop_toBottomOf="@+id/title_textView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_weight="2"
+
+        />
+
+    <TextView
+        android:id="@+id/critical_reading_score_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/sat_critical_reading_score"
+        app:layout_constraintTop_toBottomOf="@id/test_takers_num_textView"
+        android:layout_marginTop="@dimen/margin_ten"
+        android:layout_marginLeft="@dimen/margin_ten"
+        android:layout_marginStart="@dimen/margin_ten"
+        app:layout_constraintHorizontal_weight="1"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/critical_reading_score"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/test_takers_num_textView"
+        android:layout_marginTop="@dimen/margin_ten"
+        android:layout_marginLeft="@dimen/margin_ten"
+        android:layout_marginStart="@dimen/margin_ten"
+        app:layout_constraintHorizontal_weight="1"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintLeft_toRightOf="@id/critical_reading_score_textView"
+        />
+
+    <TextView
+        android:id="@+id/math_avg_score_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/sat_math_score"
+        app:layout_constraintTop_toBottomOf="@id/critical_reading_score_textView"
+        android:layout_marginTop="@dimen/margin_ten"
+        android:layout_marginLeft="@dimen/margin_ten"
+        android:layout_marginStart="@dimen/margin_ten"
+        app:layout_constraintHorizontal_weight="1"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/math_avg_score"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/critical_reading_score_textView"
+        android:layout_marginTop="@dimen/margin_ten"
+        android:layout_marginLeft="@dimen/margin_ten"
+        android:layout_marginStart="@dimen/margin_ten"
+        app:layout_constraintHorizontal_weight="1"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintLeft_toRightOf="@id/math_avg_score_textView"
+        />
+
+    <TextView
+        android:id="@+id/writing_avg_score_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/sat_writing_score"
+        app:layout_constraintTop_toBottomOf="@id/math_avg_score_textView"
+        android:layout_marginTop="@dimen/margin_ten"
+        android:layout_marginStart="@dimen/margin_ten"
+        android:layout_marginLeft="@dimen/margin_ten"
+        app:layout_constraintHorizontal_weight="1"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/writing_avg_score"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/math_avg_score_textView"
+        android:layout_marginTop="@dimen/margin_ten"
+        android:layout_marginLeft="@dimen/margin_ten"
+        android:layout_marginStart="@dimen/margin_ten"
+        app:layout_constraintHorizontal_weight="1"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintLeft_toRightOf="@id/writing_avg_score_textView"
+        />
+
+</android.support.constraint.ConstraintLayout>
+</layout>

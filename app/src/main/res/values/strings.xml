@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">20180411-SS-NYCSchool</string>
+    <string name="action_settings">Settings</string>
+    <string name="school_fragment">Schools</string>
+    <string name="school_detail_fragment">SAT Result</string>
+    <string name="test_score">Test Score</string>
+    <string name="no_of_test_takers">No of test takers:</string>
+    <string name="sat_critical_reading_score">SAT Critical Reading Avg. Score:</string>
+    <string name="sat_math_score">SAT Math Avg. Score:</string>
+    <string name="sat_writing_score">SAT Writing Avg. Score:</string>
+</resources>
